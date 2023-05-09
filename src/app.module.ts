@@ -8,7 +8,9 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://127.0.0.1:27017/ej-tasks-nest'),
+    MongooseModule.forRoot(
+      'mongodb://mongo:jRPFpnDkOLEyRxmAAc0b@containers-us-west-42.railway.app:6526',
+    ),
     TasksModule,
     UsersModule,
     AuthModule,
